@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Zaypl Test site</title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+
+    <nav class="top-bar">
+      <ul class="title-area">
+        <li class="name"><h1><a href="home">MainHomePage</a></h1></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <ul class="right">
+
+          <li><a href="#">About</a>
+          <li><a href="#">Contact</a>
+          <li><a href="#">Home</a>
+
+        </ul>
+    </nav>
+
+
+        <div class="row">
+          
+            <div class="large-8 columns">
+              <div class="panel">
+                <h2>Welcome to the Zaypl test site!</h2>
+                <p>Lorem ipsum, sample text Lorem ipsum, sample text Lorem ipsum, sample text Lorem ipsum, sample text Lorem ipsum, sample text Lorem ipsum, sample text Lorem ipsum, sample text Lorem ipsum, sample text Lorem ipsum, sample text <p>Lorem ipsum, sample text Lorem ipsum, sample text Lorem ipsum, sample text Lorem ipsum, sample text Lorem ipsum, sample text Lorem ipsum, sample text Lorem ipsum, sample text Lorem ipsum, sample text Lorem ipsum, sample text</p></p>
+              </div>
+
+              <div id="moreinformation" class-"reveal-modal" data-reveal>
+
+                <h3>This is going to be the best restaurant site in the world</h3>
+                <p>Take your time and do it right.  Code it, revise, revise again, repeat revise again.  Get feedback and then revise again.  After all that it is time to launch. </p>
+             
+
+              </div>
+
+              <a class="round button" href="#" data-reveal-id="moreinformation">Find out more!</a>
+
+            </div>
+
+            <div class="large-4 columns">
+
+              <ul data-orbit>
+
+                <li><img src="/assets/cake.jpg" /></li>
+                <li><img src="/assets/pic1.jpg" /></li>
+                <li><p>Lorem ipsum test test testse tests</p></li>
+              </ul>
+              
+            
+
+
+            </div>
+
+          </div>
+
+        <div class="large-12 columns"> 
+
+            <div class="panel">
+            <h3>What is this test going to be about?</h3>
+              <p>This site is going to take current technologies, along with my creative mind to create a niche' site that is dedication to dining out and reviewing food in restaurants.</p>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+          
+          <div class="large-12 columns">
+            <h3>Great food options</h3>
+            
+            <ul class="large-block-grid-2">
+              
+              <li data-tooltip class="has-tip" title="It's mmm mmm GOOD!!!"><img src="/assets/pic1.jpg" />
+              <li data-tooltip class="has-tip" title="Cmon you know you want some!"><img src="/assets/pic2.jpg" />
+              <li><img src="/assets/pic3.jpg" />
+              <li><img src="/assets/pic4.jpg" />
+
+            </ul>
+
+          </div>        
+
+        </div>
+
+    
+
+    <%= yield %>
+    <%= javascript_include_tag "application" %>
+    <script src="assets/javascripts/foundation.js"></script>
+    <script src="assets/javascripts/foundation.orbit.js"></script>
+    <script src="assets/javascripts/foundation.topbar.js"></script> 
+    <script src="assets/javascripts/foundation.tooltip.js"></script> 
+    <script src="assets/javascripts/foundation.reveal.js"></script>
+
+</script>
+  </body>
+</html>
+

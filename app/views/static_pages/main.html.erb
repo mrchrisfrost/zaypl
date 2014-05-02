@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Zaypl Test site</title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+
+    <nav class="top-bar">
+      <ul class="title-area">
+        <li class="name"><h1><a href="home">Main Page</a></h1></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <ul class="right">
+
+          <li><a href="#">Home</a>
+          <li><a href="#">About Me</a>
+          <li><a href="#">Submit Review</a>
+          <li><a href="#">Specials</a>
+          <li><a href="#">Top Reviews</a>
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Sign In</a></li>
+
+        </ul>
+    </nav>
+
+
+    <h1 align="center">Welcome to Dining Room Review</h1>
+
+    <div class="row"> 
+
+      <div class="large-4 columns">
+
+         <div class="panel">
+          <p>Dining Room Review is dedicated to those who love dining out and enjoing great food. By design we have limited the length of reviews and gear the focus towards the taste of the food.  When placing a review you will have all the options to describe your overall dining experience, however we're here to hear about food. Keep it short, keep it concise, but as far as describing the taste... skip no details. </p>
+
+        </div>
+
+      </div>
+
+    <div class="large-4 columns">
+
+      <img src="/assets/cake.jpg" />
+
+    </div>
+
+      <div class="large-4 columns">
+
+        <img align="right" src="/assets/bowl.jpg" />
+
+      
+
+      </div>
+
+    </div>
+
+    
+      <div class="row">
+
+        <div class="large-6 columns">
+
+          <h2 align="center">Featured Restaurants</h2>
+          
+            <ul data-orbit>
+              
+              <li><img src="/assets/bann.gif" /></li>
+              <li><img src="/assets/atlantic-grill.jpg" /></li>
+              <li><img src="/assets/guykaku.jpg" /></li>
+              <li><img src="/assets/mesa-grill.jpg" /></li>
+
+            </ul>
+
+
+        </div>
+
+        <div class="large-6 columns"> 
+
+          <h2 align="center">Featured Chefs</h2>
+
+            <ul data-orbit>
+              
+              <li><img src="/assets/kish.jpeg" /></li>
+              <li><img src="/assets/samuelsson.jpg" /></li>
+              <li><img src="/assets/zakarian.jpg" /></li>
+              <li><img src="/assets/ramsey.jpg" /></li>
+
+            </ul>
+
+
+
+        </div>
+
+
+      </div>
+
+      <div class="row"> 
+
+        <div class="medium-2 columns">
+
+        <p>What are you in the mood for?</p>
+
+          <ul align="left">
+
+            <li><a href="#">American</a></li>
+            <li><a href="#">Asian</a></li>
+            <li><a href="#">Bar and Grill</a></li>
+            <li><a href="#">Bistro</a></li>
+            <li><a href="#">Chinese</a></li>
+            <li><a href="#">French</a></li>
+            <li><a href="#">Italian</a></li>
+            <li><a href="#">Indian</a></li>
+            <li><a href="#">Japanese</a></li>
+            <li><a href="#">Kosher</a></li>
+            <li><a href="#">Latin</a></li>
+            <li><a href="#">Middle Eastern</a></li>
+            <li><a href="#">Vietnames</a></li>
+            <li><a href="#">Wine Bar</a></li>
+
+
+          </ul>
+
+        </div>
+
+        <div class="large-5 columns">
+          
+          <p>Insert user feed box here <br>
+          displaying the most recent user reviews</p>
+
+        </div>
+
+        <div class="large-5 columns">
+          
+        <p>Insert user feed box here <br>
+          displaying most recent user reviews</p>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+    <%= yield %>
+    <%= javascript_include_tag "application" %>
+    <script src="assets/javascripts/foundation.js"></script>
+    <script src="assets/javascripts/foundation.orbit.js"></script>
+    <script src="assets/javascripts/foundation.topbar.js"></script> 
+    <script src="assets/javascripts/foundation.tooltip.js"></script> 
+    <script src="assets/javascripts/foundation.reveal.js"></script>
+
+</script>
+  </body>
+</html>
+
